@@ -1,0 +1,120 @@
+:root {
+	--n0: #2e3440;
+	--n1: #3b4252;
+	--n2: #434c5e;
+	--n3: #4c566a;
+	--n4: #d8dee9;
+	--n5: #e5e9f0;
+	--n6: #eceff4;
+	--n7: #8fbcbb;
+	--n8: #88c0d0;
+	--n9: #81a1c1;
+	--n10: #5e81ac;
+	--n11: #bf616a;
+	--n12: #d08770;
+	--n13: #ebcb8b;
+	--n14: #a3be8c;
+	--n15: #b48ead;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	line-height: 1.5;
+	font-family: 'Manrope';
+	font-weight: 500;
+	background-color: var(--n0);
+	color: var(--n6);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.card {
+	display: block;
+	width: 100%;
+	max-width: 320px;
+}
+.card #title {
+	padding: 8px 16px;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+}
+.card .content {
+	padding: 8px 32px;
+	color: var(--n4);
+	font-size: 14px;
+	text-align: center;
+}
+span {
+	color: var(--n15);
+	font-weight: 700;
+}
+
+.otp {
+	display: flex;
+	justify-content: center;
+	padding: 32px 0;
+}
+
+#input {
+	color: var(--n6);
+	background-color: var(--n1);
+	height: 40px;
+	font-weight: 500;
+	font-size: 18px;
+	outline: 0;
+	border: 0;
+	border-radius: 4px;
+	/* text-align: center; */
+	box-shadow: none;
+	transition: box-shadow 0.2s;
+	font-family: 'Fira Code', sans-serif;
+	width: 184px;
+	letter-spacing: 16px;
+	padding: 0 0 0 20px;
+}
+
+#input.phone {
+	width: 100%;
+	letter-spacing: 12px;
+	padding: 0 0 0 20px;
+}
+
+#input:focus {
+	box-shadow: 0 0 1px 2px var(--n15);
+}
+
+#button {
+	display: block;
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	background-color: var(--n15);
+	letter-spacing: 1px;
+	border: 0;
+	padding: 0;
+	outline: 0;
+	color: var(--n4);
+	font-family: 'Manrope';
+	font-weight: 700;
+	border-radius: 3px;
+}
+
+#button:disabled {
+	background-color: var(--n3);
+}
